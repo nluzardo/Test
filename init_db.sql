@@ -3,7 +3,6 @@ DROP DATABASE IF EXISTS demo_db;
 
 -- Crear base de datos y usuario
 CREATE DATABASE IF NOT EXISTS demo_db;
-CREATE USER IF NOT EXISTS 'demo_user'@'%' IDENTIFIED BY 'demo_pass';
 GRANT ALL PRIVILEGES ON demo_db.* TO 'demo_user'@'%';
 FLUSH PRIVILEGES;
 
