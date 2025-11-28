@@ -1,11 +1,3 @@
--- Eliminar base de datos si existe
-DROP DATABASE IF EXISTS demo_db;
-
--- Crear base de datos y usuario
-CREATE DATABASE IF NOT EXISTS demo_db;
-GRANT ALL PRIVILEGES ON demo_db.* TO 'demo_user'@'%';
-FLUSH PRIVILEGES;
-
 -- Crear tabla y datos de ejemplo
 USE demo_db;
 CREATE TABLE IF NOT EXISTS usuarios (
